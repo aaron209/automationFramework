@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[The number of items are added to the cart successfully! 4]]>
+    </line>
+    <line>
+      <![CDATA[Items are added to the cart [Brocolli, Mushroom, Walnuts, Pumpkin]]]>
+    </line>
+    <line>
+      <![CDATA[the browser is closed successfully!]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-02-18T14:08:38 EST" name="Command line suite" finished-at="2021-02-18T14:08:52 EST" duration-ms="14187">
+    <groups>
+    </groups>
+    <test started-at="2021-02-18T14:08:38 EST" name="Command line test" finished-at="2021-02-18T14:08:52 EST" duration-ms="14187">
+      <class name="seleniumTest.RunFailedTest">
+        <test-method signature="runFailedTest()[pri:0, instance:seleniumTest.RunFailedTest@27d415d9]" started-at="2021-02-18T14:08:38 EST" name="runFailedTest" finished-at="2021-02-18T14:08:52 EST" duration-ms="14158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFailedTest -->
+      </class> <!-- seleniumTest.RunFailedTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

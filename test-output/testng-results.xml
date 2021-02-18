@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[The number of items are added to the cart successfully! 4]]>
+    </line>
+    <line>
+      <![CDATA[Items are added to the cart [Brocolli, Mushroom, Walnuts, Pumpkin]]]>
+    </line>
+    <line>
+      <![CDATA[the browser is closed successfully!]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-02-18T14:08:38 EST" name="Failed suite [Default suite]" finished-at="2021-02-18T14:08:51 EST" duration-ms="13723">
+    <groups>
+    </groups>
+    <test started-at="2021-02-18T14:08:38 EST" name="Default test(failed)" finished-at="2021-02-18T14:08:51 EST" duration-ms="13723">
+      <class name="seleniumTest.AddToCart">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:seleniumTest.AddToCart@14d3bc22]" started-at="2021-02-18T14:08:38 EST" name="beforeEachTest" finished-at="2021-02-18T14:08:48 EST" duration-ms="10125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="addItemsToCart()[pri:0, instance:seleniumTest.AddToCart@14d3bc22]" started-at="2021-02-18T14:08:48 EST" name="addItemsToCart" finished-at="2021-02-18T14:08:51 EST" duration-ms="3512" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The number of items are added to the cart successfully! 4]]>
+            </line>
+            <line>
+              <![CDATA[Items are added to the cart [Brocolli, Mushroom, Walnuts, Pumpkin]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addItemsToCart -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:seleniumTest.AddToCart@14d3bc22]" started-at="2021-02-18T14:08:51 EST" name="afterEachMethod" finished-at="2021-02-18T14:08:51 EST" duration-ms="77" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[the browser is closed successfully!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+      </class> <!-- seleniumTest.AddToCart -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
