@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="seleniumLibrary.Listeners" />
+		<listener class-name="seleniumLibrary.TransformerAnalyzer" />
+	</listeners>
+	<test thread-count="0" name="Test">
+		<classes>
+			<class name="cucumberOptions.TestRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
