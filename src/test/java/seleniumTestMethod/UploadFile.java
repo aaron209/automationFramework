@@ -3,6 +3,8 @@ package seleniumTestMethod;
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,5 +46,12 @@ public class UploadFile {
 	public void revertFileName(String path) {
 		File oldFile = new File(path);
 		oldFile.delete();
+	}
+
+	public String currentDateMinusSeven() {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy");
+		LocalDate localDate = LocalDate.now().minusDays(7);
+		String date = formatter.format(localDate);
+		return date;
 	}
 }
