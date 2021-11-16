@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Collection {
 
@@ -32,5 +33,9 @@ public class Collection {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 		System.out.println(map.get(2));
+		
+		// get first N(5) elements from list into list
+		List<String> firstNElements = list.stream().limit(5).collect(Collectors.toList());
+		System.out.println(firstNElements);
 	}
 }
