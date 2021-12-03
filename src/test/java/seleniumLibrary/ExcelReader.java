@@ -20,6 +20,7 @@ public class ExcelReader {
 		workbook = new XSSFWorkbook(file);
 	}
 
+	// get cell values of a particular column
 	public List<String> getData(String sheetName, String colName) {
 		List<String> list = new ArrayList<String>();
 		int sheetNum = workbook.getNumberOfSheets();
@@ -48,6 +49,29 @@ public class ExcelReader {
 		}
 		return list;
 
+	}
+
+	// get all cell values of the file
+	public List<String> getCellValue(String sheetName) {
+		List<String> list = new ArrayList<String>();
+		int numOfSheet = workbook.getNumberOfSheets();
+		for (int i = 0; i < numOfSheet; i++) {
+			if (workbook.getSheetName(i).equals(sheetName)) {
+				sheet = workbook.getSheetAt(i);
+				Iterator<Row> row = sheet.iterator();
+				while (row.hasNext()) {
+					Row firstRow = row.next();
+					Iterator<Cell> cell = firstRow.cellIterator();
+					while (cell.hasNext()) {
+						Cell cellValue = cell.next();
+						list.add(cellValue.getStringCellValue());
+
+					}
+				}
+
+			}
+		}
+		return list;
 	}
 
 }
