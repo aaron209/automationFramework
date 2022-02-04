@@ -30,5 +30,16 @@ public class AddAndFactorial {
 			sumNum1 = sumNum1 + i;
 		}
 		System.out.println(sumNum1 - sumNum);
+
+		// first and last digit of numbers
+		int numrs = 725;
+		int lastDigit = numrs % 10;
+		int firstDigit = numrs;
+		while (firstDigit >= 10) {
+			firstDigit = firstDigit / 10;
+		}
+		System.out.println(firstDigit);
+		System.out.println(lastDigit);
+
 	}
 }

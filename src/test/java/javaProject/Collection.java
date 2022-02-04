@@ -2,6 +2,7 @@ package javaProject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -33,9 +34,13 @@ public class Collection {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 		System.out.println(map.get(2));
-		
+
 		// get first N(5) elements from list into list
 		List<String> firstNElements = list.stream().limit(5).collect(Collectors.toList());
 		System.out.println(firstNElements);
+
+		// sort the collection in ascending and descending order
+		Arrays.sort(name);
+		Arrays.sort(name, Collections.reverseOrder());
 	}
 }

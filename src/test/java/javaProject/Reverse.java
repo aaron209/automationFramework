@@ -16,5 +16,12 @@ public class Reverse {
 		String strNum = String.valueOf(num);
 		StringBuffer str1 = new StringBuffer(strNum);
 		System.out.println(str1.reverse());
+		
+		//reverse elements of array
+		int [] nums = {23, 54, 67, 45};
+		for(int i=nums.length-1; i>=0; i--) {
+			System.out.println(nums[i]);
+		}
+		
 	}
 }

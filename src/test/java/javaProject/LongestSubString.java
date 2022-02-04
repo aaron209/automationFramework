@@ -3,10 +3,10 @@ package javaProject;
 import java.util.HashSet;
 import java.util.Set;
 
-public class StringJava {
+public class LongestSubString {
 
 	// longest sub string with no repetition
-	public static String longestSubString(String str) {
+	public static String longestSubStrings(String str) {
 		Set<Character> set = new HashSet<Character>();
 		String longestTillNow = "";
 		String longestOverall = "";
@@ -26,6 +26,6 @@ public class StringJava {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(longestSubString("kishorsubedi"));
+		System.out.println(longestSubStrings("kishorsubedi"));
 	}
 }
