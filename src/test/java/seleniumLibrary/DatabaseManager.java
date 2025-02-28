@@ -7,13 +7,10 @@ import java.sql.Statement;
 
 public class DatabaseManager {
 
-	private String databaseServerName = "localhost";
-	private String databasePort = "1521";
-	private String databaseName = "xe";
+	
 	private String userName = "hr";
 	private String password = "hr";
-	private String connectionURL = "jdbc:oracle:thin:" + userName + "//" + databaseServerName + ":" + databasePort + "/"
-			+ databaseName;
+	private String connectionURL = "jdbc:oracle:thin:@localhost:1521:xe";
 	private Connection connection = null;
 	private Statement statement = null;
 	private ResultSet resultSet = null;
@@ -37,5 +34,11 @@ public class DatabaseManager {
 			e.printStackTrace();
 		}
 		return resultSet;
+	}
+	
+	public static void main(String [] args) {
+		DatabaseManager databaseManager = new DatabaseManager();
+		ResultSet  result = databaseManager.runSQLQuery("select * from Employee");
+		System.out.println(result);
 	}
 }

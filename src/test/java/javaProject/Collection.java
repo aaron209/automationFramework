@@ -42,5 +42,20 @@ public class Collection {
 		// sort the collection in ascending and descending order
 		Arrays.sort(name);
 		Arrays.sort(name, Collections.reverseOrder());
+		
+		// get repeated values from the two lists
+		String [] name2 = {"nam", "gowith", "shyam", "myname"};
+		List<String> list2 = Arrays.asList(name2);
+		Set<String> set2 = new HashSet<>(list2);
+		Set<String> commonElements = new HashSet<String>();
+		
+		for(String li : list) {
+			if(set2.contains(li)) {
+				commonElements.add(li);
+				
+				
+			}
+		}
+		System.out.println(commonElements);
 	}
 }

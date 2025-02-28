@@ -5,8 +5,8 @@
     <classes>
       <class name="seleniumTest.AddToCart">
         <methods>
-          <include name="addItemsToCart"/>
           <include name="beforeEachTest"/>
+          <include name="addItemsToCart"/>
           <include name="afterEachMethod"/>
         </methods>
       </class> <!-- seleniumTest.AddToCart -->

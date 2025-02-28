@@ -1,6 +1,6 @@
 package seleniumLibrary;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,7 +24,7 @@ public class BaseTest {
 		driver = initializeDriver();
 		baseUrl = pro.readProperty("base.url");
 		driver.get(baseUrl);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 	}
 

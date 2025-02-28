@@ -3,6 +3,7 @@ package seleniumTest;
 import java.util.List;
 
 import org.testng.annotations.Test;
+
 import seleniumLibrary.BaseTest;
 import seleniumLibrary.ExcelReader;
 import seleniumTestMethod.AddItemsToCart;
@@ -16,4 +17,5 @@ public class AddToCart extends BaseTest {
 		List<String> list = reader.getData("Sheet1", "Items To Be Added");
 		toCart.addToCart(list);
 	}
+
 }

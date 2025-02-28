@@ -15,7 +15,7 @@ public class UploadFile {
 
 	public WebDriver driver;
 	public String pathAfterUpdate;
-
+	
 	public void uploadFileWithRename(String path) {
 		try {
 			pathAfterUpdate = renameFile(path);

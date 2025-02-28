@@ -30,7 +30,7 @@ public class Miscellaneous {
 		alert.sendKeys(null);
 
 		// handle frame
-		driver.switchTo().frame("iframe-name");
+		driver.switchTo().frame("iframe-name/id/index");
 		driver.switchTo().defaultContent();
 
 	}

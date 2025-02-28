@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -52,4 +53,9 @@ public class ImportantMethod {
 			driver.findElement(By.xpath("")).sendKeys(idThread.get(Thread.currentThread().getId()).get(i));
 		}
 	}
+	
+	// if element has shadow root
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	WebElement free = (WebElement) js.executeScript("return document.querySelector('hgf-c360nav').shadowRoot.querySelector('header').querySelector('div > div > div').querySelector('div.trial-container > hgf-button').shadowRoot.querySelector('a.hgf-button')");
+
 }
